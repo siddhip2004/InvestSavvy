@@ -104,10 +104,8 @@ All the partially implemented features:
 
 >For Web-App
  1. Clone the GitHub repo:
- In the home directory, run the following command:
- ```
- 
- ```
+ <br>
+
  ```bash
  git clone git@github.com:druhi021204/InvestSavvy.git
  ```
@@ -116,42 +114,49 @@ All the partially implemented features:
 
  ```bash
  cd client
- npm init -y
- npm run start
+ npm install
+ npm start
 ```
  3. To start the backend server:
   ```bash
     
     cd server
-    npm init -y 
-    
+    npm install
+    nodemon server.js   
   ```
 
  ## 💻Usage
 
->Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
+> User needs to signup/login (if not a previous user) by providing their credentials, and setup a secure password.With this one can access all features on home page.
 
+* **Financial terms**: As soon as the page opens after login/signup, one can view the slideshow to enhance knowledge.
+
+* **Portfolio-Optimization**: With the button right below slideshow, 'LET'S BEGIN', one can get potential return on interested stocs.
+
+* **Comapny's Stock Price**: Moving further, one can enter the symbol of share holding company and get record for past 5 years.
+
+* **Latest Financial News**: Last but not least, towards the end, latest financial and business news wil made be seen.
 ## 👨‍💻Team Members
 
-Add names of your team members with their emails and links to their GitHub accounts
+- Our team and their contact information
 
-- [Team Member 1 Name](https://github.com/): Email 
-- [Team Member 2 Name](https://github.com/): Email 
+- [Druhi Phutane](https://github.com/druhi021204): druhiphutane@gmail.com 
+- [Siddhi Parekh](https://github.com/siddhip2004): shparekh25@gmail.com
+- [Purab Tamboli](https://github.com/thisisPurab): purabrtamboli97@gmail.com
+- [Nishat Patil](https://github.com/nishatp9): nishatpatil902@gmail.com 
 
 ## 👨‍🏫Mentors
 
-Add names of your mentors with their emails and links to their GitHub accounts
+- Our Mentors and Their contact information
 
-- [Mentor 1 Name](https://github.com/): Email 
-- [Mentor 2 Name](https://github.com/): Email 
+- [Rohan Fatehchandka](https://github.com/rohanfatehchandka): rohanfatehchandka@gmail.com
+- [Arnav Zutshi](https://github.com/AsRaNi1): arnzut1324@gmail.com 
 
 ## 📱Screenshots
-Add a few screenshots for parts of the project completed till now to give the viewer a quick idea of what your project looks like. After all, a picture speaks a thousand words.
+- A glimpse of our project 
 
-You'll have to link the screenshots from your drive folder here.
-
-![Screenshot alt text](https://i.redd.it/qp8ocyzvyj8a1.jpg "Here is a screenshot")
-
-Use this template as a guide for writing your documentation. Feel free to customize and adapt it for you project.  
-For more Markdown syntax help, visit [here](https://www.markdownguide.org/basic-syntax/)
-
+![Home Page](https://drive.google.com/uc?id=1dD_0P-yMc71j0Jktw0rgLJsnjhDDH2rc)
+![Sign Up](https://drive.google.com/uc?id=1BdRuAx8ESTcx_PjWocw504p606ntSJHC)
+![Main Page](https://drive.google.com/uc?id=10BVCxuN_q1JRY3huQNcYjoc67nfyuY0u)
+![Company Details](https://drive.google.com/uc?id=1rN4Hwso2bETSPOPZ2YDnObHDC2DWrpOT)
+![News](https://drive.google.com/uc?id=18_89jzJTI19aKFJxV2pSakl6uikh1nBB)
