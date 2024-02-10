@@ -29,11 +29,35 @@ const MainForm = () => {
     //     console.log(password, username );
     //   };
 
-    const formatdate = (date) => {
+    const formatStartdate = (date) => {
         const [year, month, day] = date.split('-');
+        let Startdate=0;
         if (year && month && day) {
-            return `${year}/${month.padStart(2, '0')}/${day.padStart(2, '0')}`;
+            Startdate= `${year}/${month.padStart(2, '0')}/${day.padStart(2, '0')}`;
+            return Startdate;
         }
+        // if(Startdate!==0){
+
+        // const startDateFormatted = new Date(Startdate).toLocaleDateString();
+        // return <span>{startDateFormatted}</span>;
+        // }
+
+        return date; // Return the original date if the format is invalid
+    };
+
+    const formatEnddate = (date) => {
+        const [year, month, day] = date.split('-');
+        let Enddate;
+        if (year && month && day) {
+            Enddate= `${year}/${month.padStart(2, '0')}/${day.padStart(2, '0')}`;
+            return Enddate;
+        }
+        // if(Enddate){
+
+        // const endDateFormatted = new Date(Enddate).toLocaleDateString();
+        // return <span>{endDateFormatted}</span>;
+        // }
+
         return date; // Return the original date if the format is invalid
     };
     const handleSubmit = async (e) => {
@@ -44,7 +68,7 @@ const MainForm = () => {
             return
           }
 
-        const data = {startDate, endDate, strings}
+        const data = { endDate, strings, startDate}
 
         const response = await fetch ('/api/data/add', {
             method: 'POST',
@@ -83,14 +107,14 @@ const MainForm = () => {
                 <label>Start-Date: </label>
                 <input type="text" required 
                 value={startDate}
-                onChange={(e) => setStartDate(formatdate(e.target.value))}
+                onChange={(e) => setStartDate(formatStartdate(e.target.value))}
                 className={emptyFields.includes('startDate') ? 'error' : ''}
                 />
 
                 <label>End-Date: </label>
                 <input type="text" required 
                 value={endDate}
-                onChange={(e) => setEndDate(formatdate(e.target.value))}
+                onChange={(e) => setEndDate(formatEnddate(e.target.value))}
                 className={emptyFields.includes('endDate') ? 'error' : ''}
                 />
 
@@ -98,7 +122,7 @@ const MainForm = () => {
                     <label>Stock Market Tickers:</label>
                     <input type="text" required placeholder="Enter comma separated tickers"
                     value={strings}
-                    onChange={(e) => setStrings(formatdate(e.target.value))}
+                    onChange={(e) => setStrings((e.target.value))}
                     className={emptyFields.includes('strings') ? 'error' : ''}
                     />
                 </pre>

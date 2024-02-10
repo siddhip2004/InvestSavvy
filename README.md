@@ -47,7 +47,7 @@ This project provides a comprehensive guidance to the user by providing them ins
 
 ## 🔗Links
 
-- [GitHub Repository](#https://github.com/druhi021204/InvestSavvy)
+- [GitHub Repository](https://github.com/druhi021204/InvestSavvy)
 - [Demo Video]()
 - [Drive Link to Screenshots of your project](https://drive.google.com/drive/u/1/folders/11LKJFjJvm2sGEqNjIBtGAZk5TKs17K8e)
 - [Hosted Website Link]()
